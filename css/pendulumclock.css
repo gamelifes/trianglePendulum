@@ -1,0 +1,54 @@
+/*元素使用animation属性绑定动画，
+ * 然后@keyframes 实例这个动画，
+ * 动画主要用到transform属性实现。*/
+.pendulumclock-box {
+   width:300px;
+   height:300px;
+   margin:0px auto;
+   border:1px solid #00ff90;
+}
+
+.pendulumclock {
+   width: 2px;
+   height: 100px;
+   background: #000000;
+   margin: 0px auto;
+   position: relative;
+ }
+.pendulumclock::after {
+   content: ".";
+   /*content 属性与 :before 及 :after 伪元素配合使用，来插入生成内容。
+    * "."主要是用来占位清除浮动的,*/
+   position: absolute;
+   bottom: -20px;
+   left: -9px;
+   width: 20px;
+   height: 20px;
+   border-radius: 10px;
+   background: #ff0000;
+}
+
+.pendulumclock {
+   -webkit-animation: pendulum 1s ease-in-out alternate infinite;
+   -moz-animation: pendulum 1s ease-in-out alternate infinite;
+   animation: pendulum 1s ease-in-out alternate infinite;
+}
+@keyframes pendulum {
+   0% {
+       -webkit-transform: rotate(30deg);
+       -webkit-transform-origin: top center;
+       -moz-transform: rotate(30deg);
+       -moz-transform-origin: top center;
+       transform: rotate(30deg);
+       transform-origin: top center;
+    }
+    100% {
+       -webkit-transform: rotate(-30deg);
+       -webkit-transform-origin: top center;
+       -moz-transform: rotate(-30deg);
+       -moz-transform-origin: top center;
+       transform: rotate(-30deg);
+       transform-origin: top center;
+    }
+}
+

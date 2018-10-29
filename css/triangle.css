@@ -1,0 +1,105 @@
+
+
+/*在设计一个带缺口的三角形效果方法：
+ 1.、两个三角形（底边框）的位置、大小要一致
+
+2、里面的三角形的底边框颜色为黑色（也可以为其它颜色），外面三角形边框颜色为白色的背景
+
+3、白色三角形要覆盖黑色三角形就能形成这样的形状了，关于覆盖的问题可以使用标签的位置或z-index（仅能在定位元素上奏效）来改变。*/
+
+.box {
+	left: 50px;
+	top: 0;
+	width: 280px;
+	height: 0;
+}
+
+.box1 {
+	position: absolute;
+	left: 100px;
+	top: 0;
+	width: 0;
+	height: 0;
+	border: 30px solid transparent;
+
+}
+
+.b1 {
+	border-left-color: #49ff00;
+}
+
+.b2 {
+	border-left-color: #535353;
+	/*z-index: -1;*/
+}
+
+
+/*纯CSS三角形的基本原理:设置元素宽高为0 -> 边框样式属性值transparent 透明 */
+
+.b3 {
+	width: 0;
+	height: 0;
+	
+	border-left: 40px solid transparent;
+	border-right: 40px solid transparent;
+	border-bottom: 40px solid #000;
+ 	margin-top: -40px;
+
+   	position: absolute;
+}
+
+
+/*扩展*/
+
+.b4 {
+	width: 0;
+	height: 0;
+	border-top: 40px solid #000;
+	border-left: 40px solid transparent;
+	border-right: 40px solid transparent;
+	margin-bottom: 18px;
+
+   	position: absolute;
+    
+
+}
+
+.b5 {
+	
+   
+	width: 0px;
+	height: 0px;
+	border-top: 40px solid transparent;
+	border-left:40px solid #49ff00;
+	border-bottom: 40px solid transparent;
+
+}
+
+.b6 {
+	width: 0;
+	height: 0;
+	border-top: 40px solid transparent;
+	border-bottom: 40px solid transparent;
+	border-right: 40px solid #49ff00;
+    margin-top: -80px;
+    margin-left: 40px;
+    position: absolute;
+}
+
+.b7 {
+	width: 0;
+	height: 0;
+	border-top: 10px solid transparent;
+	border-bottom: 30px solid #000;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	transition: all 0.1s;
+	border-radius: 90%;
+	top: 0;
+	left: 50%;
+	position: absolute;                                                   
+	margin-top: 50px;
+	
+	
+}
+

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>triangle</title>
+		<link rel="stylesheet" href="css/triangle.css" />
+		<link rel="stylesheet" href="css/animation.css" />
+		<link rel="stylesheet" href="css/pendulumclock.css" />
+		<link rel="stylesheet" href="css/clock.css" />
+	</head>
+
+	<body>
+		<div class="box">
+			<div class="box1">
+				<div class="box1 b1"></div>
+
+				<div class="box1 b2"></div>
+			</div>
+			<!--倒三角-->
+			<div class="b4"></div>
+			<!--左三角-->
+			<div class="b5"></div>
+			<!--右三角-->
+			<div class="b6"></div>
+			<!--正三角-->
+			<div class="b3"></div>
+
+		</div>
+		<!--旋转-->
+		<div class="b7"></div>
+
+		
+		<!--手表-->
+		<div class="watch" id="watch">
+			<div class="watch-origin"></div>
+			<div class="clock-line watch-second" id="watch-second"></div>
+			<div class="clock-line watch-minute" id="watch-mintue"></div>
+			<div class="clock-line watch-hour" id="watch-hour"></div>
+
+			<!-- 日期 -->
+
+			<div class="date" id="date"></div>
+
+			<!-- 时间 -->
+
+			<div class="time-info">
+
+				<div class="time" id="hour-time"></div>
+
+				<div class="time" id="minute-time"></div>
+
+				<div class="time" id="second-time"></div>
+			</div>
+			<!--
+			1 先定义元素容器，定义每个线条的位置。
+			
+			2 因为考虑到旋转时每根线条的透明度不一致，故要把单根线条分为两个区块。
+			
+			3 使用CSS的rotate方法来对线条进行旋转，旋转的度数取决于线条的数量，
+			最终使线条形成一个正圆。
+			
+			4 在形成圆形的线条上面覆盖一个与背景同色的正圆，
+			正圆圆心与线条形成的圆心保持一致，
+			这样整个形状就会有镂空的感觉。
+			
+			5 这一步最关键，就是形成动画的核心，其实整个动画的实现过程非常简单，
+			就是改变每根线条的透明度，这个可以通过animation的动画延迟来实现，
+			即每根线条的动画延迟时间根据其位置决定。-->
+		<div class="m-load"></div>
+
+		<div class="m-load2">
+			<div class="line">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<div class="circlebg"></div>
+		</div>
+		</div>
+		</div>
+		<!--摆钟-->
+		<div class="pendulumclock-box">
+			<div class="pendulumclock"></div>
+		</div>
+		
+
+	</body>
+	<script type="text/javascript" src="js/pendulum.js"></script>
+	<script type="text/javascript" src="js/clockrun.js"></script>
+
+</html>
+

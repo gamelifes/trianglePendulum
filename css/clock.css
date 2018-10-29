@@ -1,0 +1,156 @@
+.watch {
+	width: 650px;
+	height: 650px;
+	margin: 100px auto;
+	border: 10px solid #c0c0c0;
+	box-shadow: 0px 0px 20px 3px #FCFCFC inset;
+	border-radius: 50%;
+	position: relative;
+	margin: 5px auto;
+	z-index: 10;
+	background: #535353;
+}
+/* 原点 */
+.watch-origin {
+	width: 20px;
+	height: 20px;
+	background: #000;
+	top: 325px;
+	left: 325px;
+	z-index: 14;
+	position: absolute;
+	border-radius: 50%;
+}
+/* 指针 */
+
+.clock-line {
+	position: absolute;
+	z-index: 20;
+}
+.watch-second {
+	width: 275px;
+	height: 1px;
+	background: red;
+	top: 337px;
+	left: 333px;
+	transform-origin: 0% 50%;
+}
+
+.watch-minute {
+	width: 135px;
+	height: 2px;
+	background: #000;
+	top: 337px;
+	left: 333px;
+	transform-origin:  0% 50%;
+	transform: rotate(0deg);
+}
+
+.watch-hour {
+	width: 100px;
+	height: 2px;
+	background: #000;
+	top: 337px;
+	left: 333px;
+	transform-origin:  0% 50%;
+	transform: rotate(0deg);
+}
+
+/* 时钟数字 */
+
+.clock-num {
+	width: 50px;
+	height: 50px;
+	font-size: 22px;
+	text-align: center;
+	line-height: 300px;
+	position: absolute;
+	z-index: 8;
+	transform-origin: left bottom; 
+	color: #000;
+	font-family: fantasy, 'Trebuchet MS';
+}
+
+.em_num {
+	font-size: 28px;
+}
+
+/* 日期 时间 */
+
+.date {
+	width: 160px;
+	height: 28px;
+	line-height: 28px;
+	text-align: center;
+	position: absolute;
+	top: 378px;
+	left: 255px;
+	z-index: 11;
+	color: #FCFCFC;
+	font-weight: bold;
+	font-family: '微软雅黑';
+}
+
+.time-info {
+	width: 92px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	position: absolute;
+	top: 420px;
+	left: 285px;
+	z-index: 11;
+	background-color: #555;
+	padding: 0;
+	box-shadow: 0px 0px 9px 2px #222 inset;
+}
+
+
+.time{
+  width:30px;
+  height:30px;
+  text-align:center;
+  float:left;
+  color:#fff;
+  font-weight:bold;
+}
+
+#minute-time {
+	border-left: 1px solid #fff;
+	border-right: 1px solid #fff;
+}
+
+/* 刻度 */
+
+.clock-scale {
+	width: 195px;
+	height: 2px;
+	transform-origin: left bottom;
+	z-index: 7;
+	position: absolute;
+	top: 337px;
+	left: 333px;
+	background: #535353;
+}
+.clock-scale div:before,
+ {
+ 	content: '';
+ 	display: block;
+ 	height: 50%;
+ 	background: #c0c0c0;
+ 	border-radius: 50%;
+ }
+.scale-show {
+	width: 12px;
+	height: 2px;
+	background-color: #fcfcfc;
+	float: left;
+}
+
+.scale-hidden {
+	width: 183px;
+	height: 2px;
+	float: left;
+	
+}
+
