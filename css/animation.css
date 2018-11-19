@@ -1,6 +1,7 @@
 
  body {
  	background: #535353;
+ 	  
  }
  
  .m-load,
@@ -12,10 +13,12 @@
  
  .m-load {
  	background:  #535353 center center no-repeat;
+ 	
  }
  
  .m-load2 {
  	background: #535353;
+ 	
  }
  /** 加载动画的静态样式 **/
  
@@ -38,6 +41,7 @@
  	height: 50%;
  	background: #fcfcfc;
  	border-radius: 5px;
+ 	  filter: blur(5px);
  }
  
  .m-load2 .line div:nth-child(2) {

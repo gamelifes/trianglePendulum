@@ -30,29 +30,29 @@
 		<!--旋转-->
 		<div class="b7"></div>
 
-		
 		<!--手表-->
 		<div class="watch" id="watch">
-			<div class="watch-origin"></div>
-			<div class="clock-line watch-second" id="watch-second"></div>
-			<div class="clock-line watch-minute" id="watch-mintue"></div>
-			<div class="clock-line watch-hour" id="watch-hour"></div>
+			
+				<div class="watch-origin"></div>
+				<div class="clock-line watch-second" id="watch-second"></div>
+				<div class="clock-line watch-minute" id="watch-mintue"></div>
+				<div class="clock-line watch-hour" id="watch-hour"></div>
 
-			<!-- 日期 -->
+				<!-- 日期 -->
 
-			<div class="date" id="date"></div>
+				<div class="date" id="date"></div>
 
-			<!-- 时间 -->
+				<!-- 时间 -->
 
-			<div class="time-info">
+				<div class="time-info">
 
-				<div class="time" id="hour-time"></div>
+					<div class="time" id="hour-time"></div>
 
-				<div class="time" id="minute-time"></div>
+					<div class="time" id="minute-time"></div>
 
-				<div class="time" id="second-time"></div>
-			</div>
-			<!--
+					<div class="time" id="second-time"></div>
+				</div>
+				<!--
 			1 先定义元素容器，定义每个线条的位置。
 			
 			2 因为考虑到旋转时每根线条的透明度不一致，故要把单根线条分为两个区块。
@@ -67,30 +67,28 @@
 			5 这一步最关键，就是形成动画的核心，其实整个动画的实现过程非常简单，
 			就是改变每根线条的透明度，这个可以通过animation的动画延迟来实现，
 			即每根线条的动画延迟时间根据其位置决定。-->
-		<div class="m-load"></div>
+				<div class="m-load"></div>
 
-		<div class="m-load2">
-			<div class="line">
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-			</div>
-			<div class="circlebg"></div>
-		</div>
-		</div>
+				<div class="m-load2">
+					<div class="line">
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+					</div>
+					<div class="circlebg"></div>
+				</div>
+			
 		</div>
 		<!--摆钟-->
 		<div class="pendulumclock-box">
 			<div class="pendulumclock"></div>
 		</div>
-		
 
 	</body>
-	<script type="text/javascript" src="js/pendulum.js"></script>
+	<!--<script type="text/javascript" src="js/pendulum.js"></script>-->
 	<script type="text/javascript" src="js/clockrun.js"></script>
 
 </html>
-
